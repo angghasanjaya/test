@@ -1,0 +1,15 @@
+{
+    "mappings": {
+        "my_data": {
+            "_all": {
+                "enabled": false
+            },
+            "properties": {
+                "created_at": {
+                    "type": "date",
+                    "format": "E MMM d HH:mm:ss Z yyyy"
+                }
+            }
+        }
+    }
+}

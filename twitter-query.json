@@ -1,0 +1,16 @@
+{
+    "aggs": {
+        "user": {
+            "nested": {
+                "path": "user"
+            },
+            "aggs": {
+                "favourites_count_total": {
+                    "sum": {
+                        "field": "user.favourites_count"
+                    }
+                }
+            }
+        }
+    }
+}

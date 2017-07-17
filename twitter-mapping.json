@@ -1,0 +1,247 @@
+{
+    "mappings": {
+        "statuses": {
+            "properties": {
+                "coordinates": {
+                    "type": "text"
+                },
+                "favorited": {
+                    "type": "boolean"
+                },
+                "truncated": {
+                    "type": "boolean"
+                },
+                "created_at": {
+                    "type": "date",
+                    "format": "E MMM d HH:mm:ss Z yyyy"
+                },
+                "id_str": {
+                    "type": "text"
+                },
+                "entities": {
+                    "type": "nested",
+                    "properties": {
+                        "urls": {
+                            "type": "text"
+                        },
+                        "hashtags": {
+                            "properties": {
+                                "text": {
+                                    "type": "text"
+                                },
+                                "indices": {
+                                    "type": "integer"
+                                }
+                            }
+                        },
+                        "user_mentions": {
+                            "type": "text"
+                        }
+                    }
+                },
+                "in_reply_to_user_id_str": {
+                    "type": "text"
+                },
+                "contributors": {
+                    "type": "text"
+                },
+                "text": {
+                    "type": "text"
+                },
+                "metadata": {
+                    "type": "nested",
+                    "properties": {
+                        "iso_language_code": {
+                            "type": "text"
+                        },
+                        "result_type": {
+                            "type": "text"
+                        }
+                    }
+                },
+                "retweet_count": {
+                    "type": "long"
+                },
+                "in_reply_to_status_id_str": {
+                    "type": "text"
+                },
+                "id": {
+                    "type": "long"
+                },
+                "geo": {
+                    "type": "text"
+                },
+                "retweeted": {
+                    "type": "boolean"
+                },
+                "in_reply_to_user_id": {
+                    "type": "long"
+                },
+                "place": {
+                    "type": "text"
+                },
+                "user": {
+                    "type": "nested",
+                    "properties": {
+                        "profile_sidebar_fill_color": {
+                            "type": "text"
+                        },
+                        "profile_sidebar_border_color": {
+                            "type": "text"
+                        },
+                        "profile_background_tile": {
+                            "type": "boolean"
+                        },
+                        "name": {
+                            "type": "text"
+                        },
+                        "profile_image_url": {
+                            "type": "text"
+                        },
+                        "created_at": {
+                            "type": "date",
+                            "format":"E MMM d HH:mm:ss Z yyyy"}
+                            ,
+                            "location": {
+                                "type": "text"
+                            },
+                            "follow_request_sent": {
+                                "type": "long"
+                            },
+                            "profile_link_color": {
+                                "type": "text"
+                            },
+                            "is_translator": {
+                                "type": "boolean"
+                            },
+                            "id_str": {
+                                "type": "text"
+                            },
+                            "entities": {
+                                "type": "nested",
+                                "properties": {
+                                    "url": {
+                                        "type": "nested",
+                                        "properties":
+                                        {
+                                            "urls": {
+                                                "properties": {
+                                                    "expanded_url": {
+                                                        "type": "text"
+                                                    },
+                                                    "url": {
+                                                        "type": "text"
+                                                    },
+                                                    "indices": {
+                                                        "type": "integer"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                "descriptions": {
+                    "type": "nested",
+                    "properties": {
+                        "urls": {
+                            "type": "text"
+                        }
+                    }
+                },
+                "default_profile": {
+                    "type": "boolean"
+                },
+                "contributors_enabled": {
+                    "type": "boolean"
+                },
+                "favourites_count": {
+                    "type": "long"
+                },
+                "url": {
+                    "type": "text"
+                },
+                "profile_image_url_https": {
+                    "type": "text"
+                },
+                "utc_offset": {
+                    "type": "long"
+                },
+                "id": {
+                    "type": "long"
+                },
+                "profile_use_background_image": {
+                    "type": "boolean"
+                },
+                "listed_count": {
+                    "type": "long"
+                },
+                "profile_text_color": {
+                    "type": "text"
+                },
+                "lang": {
+                    "type": "text"
+                },
+                "followers_count": {
+                    "type": "long"
+                },
+                "protected": {
+                    "type": "boolean"
+                },
+                "notifications": {
+                    "type": "integer"
+                },
+                "profile_background_image_url_https": {
+                    "type": "text"
+                },
+                "profile_background_color": {
+                    "type": "text"
+                },
+                "verified": {
+                    "type": "boolean"
+                },
+                "geo_enabled": {
+                    "type": "boolean"
+                },
+                "time_zone": {
+                    "type": "text"
+                },
+                "description": {
+                    "type": "text"
+                },
+                "default_profile_image": {
+                    "type": "boolean"
+                },
+                "profile_background_image_url": {
+                    "type": "text"
+                },
+                "statuses_count": {
+                    "type": "long"
+                },
+                "friends_count": {
+                    "type": "long"
+                },
+                "following": {
+                    "type": "text"
+                },
+                "show_all_inline_media": {
+                    "type": "boolean"
+                },
+                "screen_name": {
+                    "type": "text"
+                }
+            }
+        },
+        "in_reply_to_screen_name": {
+            "type": "text"
+        },
+        "source": {
+            "type": "text"
+        },
+        "in_reply_to_status_id": {
+            "type": "long"
+        }
+    }
+}
+}
+}
